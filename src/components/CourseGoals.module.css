@@ -1,0 +1,7 @@
+.articleCard {
+  background-color: rgb(213, 188, 155);
+  border: 2px solid rgb(77, 107, 123);
+  border-radius: 10px;
+  min-width: 500px;
+  min-height: 300px;
+}
