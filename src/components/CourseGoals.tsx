@@ -1,18 +1,17 @@
 import React from "react";
 import styles from "./CourseGoals.module.css";
+import { type ReactNode } from "react";
 
-const CourseGoals = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => {
+interface courseGoals {
+  title: String;
+  children: ReactNode;
+}
+
+const CourseGoals = ({ title, children }: courseGoals) => {
   return (
     <div>
       <article className={styles.articleCard}>
         <h2>{title}</h2>
-        <p>{description}</p>
         <button>Delete</button>
       </article>
     </div>
